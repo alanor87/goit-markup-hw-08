@@ -1,27 +1,56 @@
-.footer-parts {
-  display: flex;
-  justify-content: space-between;
+.footer-section {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: block;
+  text-align: center;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    justify-content: space-between;
+  }
 }
 
-.footer-social-part {
-  margin-right: 93px;
-}
 .footer-social-part,
 .footer-subscribe-part {
-  margin-top: 12px;
+  margin-top: 60px;
 }
+.footer-social-part {
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-top: 0;
+  }
+}
+.footer-subscribe-part {
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
 /*-- Overriding italic font in address element --*/
 address {
   margin-top: 20px;
   font-style: normal;
 }
 .link-logo.footer {
+
   color: $color-white;
   letter-spacing: 0.03em;
 }
 /*-- Making space between address items lines in footer --*/
 .contacts-footer > li:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 9px;
+  }
 }
 .link-contacts-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -44,8 +73,12 @@ address {
   letter-spacing: 0.03em;
 }
 footer .features-title {
+  text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    text-align: left;
+  }
 }
 .social-networks-link.footer {
   color: #ffffff;
@@ -57,12 +90,15 @@ footer .features-title {
   }
 }
 .form-subscribe {
-  display: flex;
+  display: block;
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+  }
 }
 .form-subscribe input {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -73,11 +109,17 @@ footer .features-title {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 .form-subscribe .big-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 
   &:hover {
     transform: scale(1);

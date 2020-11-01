@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Студия" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.min.css" />
@@ -9,7 +10,7 @@
   </head>
 
   <body>
-    <header>
+    <!-- <header>
       <div class="container">
         <nav class="nav">
           <a class="link-logo header" lang="en" href="./index.html"><span>Web</span>Studio</a>
@@ -38,7 +39,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="hero-section">
@@ -54,7 +55,6 @@
       <section class="features-section">
         <div class="container">
           <h2 class="section-header" hidden>Особенности</h2>
-          <!-- H2 is present but hidden for semantics!-->
           <ul class="features-container">
             <li>
               <div class="icon">
@@ -91,7 +91,7 @@
       <section class="whatwedo-section">
         <div class="container">
           <h2 class="section-header">Чем мы занимаемся</h2>
-          <ul class="whatwedo-img-container">
+          <ul class="whatwedo-container">
             <li>
               <img src="./images/images-main/img-1.jpg" alt="Схема алгоритма" width="370" height="294" />
               <div class="whatwedo-text-overlay"><p>Десктопные приложения</p></div>
@@ -113,9 +113,29 @@
           <h2 class="section-header">Наша команда</h2>
           <ul class="team-card-container">
             <li>
-              <figure class="team-card">
-                <img class="team-photo" src="./images/images-main/face-1.jpg" alt="Парень в очках" width="270" height="260" />
-                <figcaption>
+              <div class="team-card">
+                <picture>
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img1-desktop@1x.webp 1x, ./images/images-main/team/desktop/team-img1-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img1-desktop@1x.jpg 1x, ./images/images-main/team/desktop/team-img1-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpg" />
+                  <source
+                      srcset="./images/images-main/team/tablet/team-img1-tablet@1x.webp 1x, ./images/images-main/team/tablet/team-img1-tablet@2x.webp 2x"
+                      media="(min-width: 768px)" type="image/webp" />
+                  <source
+                      srcset="./images/images-main/team/tablet/team-img1-tablet@1x.jpg 1x, ./images/images-main/team/tablet/team-img1-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)" type="image/jpg" />
+                  <source srcset="./images/images-main/team/mobile/team-img1-mobile@1x.webp 1x, ./images/images-main/team/mobile/team-img1-mobile@2x.webp 2x"                        
+                          type="image/webp" />
+                  <source srcset="./images/images-main/team/mobile/team-img1-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img1-mobile@2x.jpg 2x"
+                          type="image/jpg" />
+                  <img class="team-photo" 
+                       srcset="./images/images-main/team/mobile/team-img1-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img1-mobile@2x.jpg 2x"
+                       alt="Парень в очках" />
+                </picture>
+                <div>
                   <p class="team-member-name">Игорь Демьяненко</p>
                   <p class="team-member-position" lang="en">Product Designer</p>
                   <ul class="social-networks">
@@ -148,13 +168,35 @@
                       </a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <li>
-              <figure class="team-card">
-                <img class="team-photo" src="./images/images-main/face-2.jpg" alt="Девушка в очках" width="270" height="260" />
-                <figcaption>
+              <div class="team-card">
+                <picture>
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img2-desktop@1x.webp 1x, ./images/images-main/team/desktop/team-img2-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img2-desktop@1x.jpg 1x, ./images/images-main/team/desktop/team-img2-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpg" />
+                  <source
+                    srcset="./images/images-main/team/tablet/team-img2-tablet@1x.webp 1x, ./images/images-main/team/tablet/team-img2-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/tablet/team-img2-tablet@1x.jpg 1x, ./images/images-main/team/tablet/team-img2-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpg" />
+                  <source
+                    srcset="./images/images-main/team/mobile/team-img2-mobile@1x.webp 1x, ./images/images-main/team/mobile/team-img2-mobile@2x.webp 2x"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/mobile/team-img2-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img2-mobile@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img class="team-photo"
+                    srcset="./images/images-main/team/mobile/team-img2-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img2-mobile@2x.jpg 2x"
+                    alt="Девушка в очках" />
+                </picture>
+                <div>
                   <p class="team-member-name">Ольга Репина</p>
                   <p class="team-member-position" lang="en">Frontend Developer</p>
                   <ul class="social-networks">
@@ -187,13 +229,35 @@
                       </a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <li>
-              <figure class="team-card">
-                <img class="team-photo" src="./images/images-main/face-3.jpg" alt="Парень без очков" width="270" height="260" />
-                <figcaption>
+              <div class="team-card">
+                <picture>
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img3-desktop@1x.webp 1x, ./images/images-main/team/desktop/team-img3-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img3-desktop@1x.jpg 1x, ./images/images-main/team/desktop/team-img3-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpg" />
+                  <source
+                    srcset="./images/images-main/team/tablet/team-img3-tablet@1x.webp 1x, ./images/images-main/team/tablet/team-img3-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/tablet/team-img3-tablet@1x.jpg 1x, ./images/images-main/team/tablet/team-img3-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpg" />
+                  <source
+                    srcset="./images/images-main/team/mobile/team-img3-mobile@1x.webp 1x, ./images/images-main/team/mobile/team-img3-mobile@2x.webp 2x"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/mobile/team-img3-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img3-mobile@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img class="team-photo"
+                    srcset="./images/images-main/team/mobile/team-img3-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img3-mobile@2x.jpg 2x"
+                    alt="Девушка в очках" />
+                </picture>
+                <div>
                   <p class="team-member-name">Николай Тарасов</p>
                   <p class="team-member-position" lang="en">Marketing</p>
                   <ul class="social-networks">
@@ -226,13 +290,35 @@
                       </a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <li>
-              <figure class="team-card">
-                <img class="team-photo" src="./images/images-main/face-4.jpg" alt="Ещё один парень в очках" width="270" height="260" />
-                <figcaption>
+              <div class="team-card">
+                <picture>
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img4-desktop@1x.webp 1x, ./images/images-main/team/desktop/team-img4-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/desktop/team-img4-desktop@1x.jpg 1x, ./images/images-main/team/desktop/team-img4-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" type="image/jpg" />
+                  <source
+                    srcset="./images/images-main/team/tablet/team-img4-tablet@1x.webp 1x, ./images/images-main/team/tablet/team-img4-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/tablet/team-img4-tablet@1x.jpg 1x, ./images/images-main/team/tablet/team-img4-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpg" />
+                  <source
+                    srcset="./images/images-main/team/mobile/team-img4-mobile@1x.webp 1x, ./images/images-main/team/mobile/team-img4-mobile@2x.webp 2x"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/images-main/team/mobile/team-img4-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img4-mobile@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img class="team-photo"
+                    srcset="./images/images-main/team/mobile/team-img4-mobile@1x.jpg 1x, ./images/images-main/team/mobile/team-img4-mobile@2x.jpg 2x"
+                    alt="Девушка в очках" />
+                </picture>
+                <div>
                   <p class="team-member-name">Михаил Ермаков</p>
                   <p class="team-member-position" lang="en">UI Designer</p>
                   <ul class="social-networks">
@@ -265,8 +351,8 @@
                       </a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -275,7 +361,7 @@
       <section class="clients-section">
         <div class="container">
           <h2 class="section-header">Постоянные клиенты</h2>
-          <ul class="clients-list">
+          <ul class="clients-container">
             <li>
               <a href="" class="client-link transition-hover">
                 <svg class="client-icon" width="45" height="50"><use href="./images/symbol-defs.svg#icon-logo-1"></use></svg>
@@ -311,9 +397,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer-section">
       <div class="container">
-        <ul class="footer-parts">
+        <ul class="footer-container">
           <li class="footer-address-part">
             <a class="link-logo footer" lang="en" href="./index.html"><span>Web</span>Studio</a>
             <address>

@@ -14,27 +14,25 @@ ul {
   padding: 0;
 }
 img {
-  /*-- To get rid of unwanted gap under the image --*/
   display: block;
 }
-header {
-  border-bottom: 1px solid #ececec;
-}
-footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 /*-- Wrapper div for the section content --*/
+section, footer {
+  width: 100%;
+  min-width: 480px;
+}
 .container {
-  width: 1200px;
+  min-width: 480px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    max-width: $breakpoint-desktop;
+  }
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 a {
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: $color-black;

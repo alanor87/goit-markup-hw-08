@@ -37,3 +37,47 @@ font-weight:
 
  ДЗ №3
  - чтоб убрать в шапке кнопки авторизации вправо, нужно задать их родительскому элементу margin-left: auto. При этом он должен быть flex-child!
+
++++++++++++++++++++++++++++++++++++++++++
+Sections paddings - DONE
+
+Mobile -  paddings top bottom
+  hero - 118 118
+  features - 60 60
+  team - 60 60
+  clients- 60 60
+  footer - 60 60
+
+Tablet-  paddings top bottom
+  hero - 118 118
+  features - 60 60
+  team - 60 60
+  clients- 60 60
+  footer - 60 60
+
+Desktop-  paddins top bottom
+  hero - 200 200
+  features - 94 94
+  whatwedo - 0 94
+  team - 94 94
+  clients- 94 94
+  footer - 60 60
+++++++++++++++++++++++++++++++++++++++++++++++++
+Flex / block in containers (major ones) - DONE
+
+.nav
+.features
+.team-card
+.clients
+.footer
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+оптимизировать все картинки!   
+сделать webp для контентных изображений!
+   -hero - done
+   -team - done
+   -whatwedo - done
+   -portfolio - done
+
+
+type image webp!! И идёт оно первым

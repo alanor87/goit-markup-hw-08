@@ -1,11 +1,16 @@
 .whatwedo-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
 }
-.whatwedo-img-container {
+.whatwedo-container {
   display: flex;
 }
-.whatwedo-img-container > li {
+.whatwedo-container > li {
   position: relative;
   margin-right: 30px;
 

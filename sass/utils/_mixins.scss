@@ -1,0 +1,14 @@
+
+/*--- Switches vertical paddings for sections on mobile tablet and PC---*/
+@mixin sections-paddings-breakpoints($m-width, $p-top, $p-bottom) {
+  @media screen and (min-width: $m-width) {
+    padding-top: $p-top;
+    padding-bottom: $p-bottom;
+  }
+}
+/*--- Switches to flex display for section components, starting from tablet width ---*/
+@mixin flex-containers-breakpoints() {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}

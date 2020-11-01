@@ -1,23 +1,28 @@
 .team-section {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include sections-paddings-breakpoints(1200px, 94px, 94px)
 }
 .team-card-container {
   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  margin: -15px;
+}
+.team-card-container {
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-wrap: nowrap;
+  }
 }
 .team-card-container > li {
-  margin-right: 30px;
+  margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 .team-card {
   margin: 0;
-  width: 270px;
   padding-bottom: 30px;
   background-color: $color-white;
   border-radius: 5px;
