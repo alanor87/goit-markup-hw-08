@@ -1,10 +1,12 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
 .container.header-menu {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  border-bottom: 1px solid #ececec;
   @media screen and (min-width: $breakpoint-tablet) {
     padding: 0 15px;
   }

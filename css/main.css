@@ -345,13 +345,16 @@ a:hover, a:focus {
   letter-spacing: 0.03em;
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container.header-menu {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 769px) {
@@ -1030,7 +1033,7 @@ a:hover, a:focus {
 
 @media screen and (min-width: 769px) {
   .portfolio-card-container > li {
-    width: 354px;
+    width: 339px;
   }
 }
 
@@ -1042,7 +1045,6 @@ a:hover, a:focus {
 
 .portfolio-card {
   margin: auto;
-  max-width: 100%;
   background: #ffffff;
 }
 
