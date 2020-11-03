@@ -5,11 +5,23 @@
 }
 .portfolio-filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 50px;
+  }
 }
-.portfolio-filter-list > li + li {
-  margin-left: 8px;
+.portfolio-filter-list > li:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 0;
+  }
 }
 .portfolio-btn {
   padding: 6px 22px;
