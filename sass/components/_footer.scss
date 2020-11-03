@@ -96,7 +96,8 @@ footer .features-title {
   }
 }
 .form-subscribe input {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;

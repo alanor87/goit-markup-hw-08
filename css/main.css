@@ -280,7 +280,6 @@ summary {
 }
 
 body {
-  min-width: 480px;
   background-color: #ffffff;
   /*-- Main background color --*/
   font-family: "Roboto", sans-serif;
@@ -307,9 +306,11 @@ img {
 /*-- Wrapper div for the section content --*/
 section, footer {
   width: 100%;
+  min-width: 320px;
 }
 
 .container {
+  min-width: 320px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -835,6 +836,7 @@ a:hover, a:focus {
 }
 
 .team-photo {
+  max-width: 100%;
   margin-bottom: 30px;
 }
 
@@ -1214,7 +1216,8 @@ footer .features-title {
 }
 
 .form-subscribe input {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;
