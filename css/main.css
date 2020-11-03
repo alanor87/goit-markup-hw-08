@@ -1012,24 +1012,37 @@ a:hover, a:focus {
 .portfolio-card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .portfolio-card-container {
+    width: 769px;
+    justify-content: flex-start;
+    margin: auto;
+  }
 }
 
 .portfolio-card-container > li {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
-.portfolio-card-container > li:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 769px) {
+  .portfolio-card-container > li {
+    width: 354px;
+  }
 }
 
-.portfolio-card-container > li:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-card-container > li {
+    width: 370px;
+  }
 }
 
 .portfolio-card {
-  margin: 0;
-  width: 370px;
+  margin: auto;
+  max-width: 100%;
   background: #ffffff;
 }
 
@@ -1042,7 +1055,6 @@ a:hover, a:focus {
 }
 
 .portfolio-card > figcaption {
-  width: 370px;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1052,6 +1064,10 @@ a:hover, a:focus {
 .portfolio-overlay-wrap {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-overlay-wrap img {
+  max-width: 100%;
 }
 
 .portfolio-overlay {
