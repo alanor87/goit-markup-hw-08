@@ -23,7 +23,13 @@ section, footer {
   
 }
 .container {
-  min-width: 320px;
+  min-width: 320px; 
+    @media screen and (min-width: $breakpoint-mobile) {
+    max-width: $breakpoint-mobile;
+  } 
+  @media screen and (min-width: $breakpoint-tablet) {
+    max-width: $breakpoint-tablet;
+  }
   @media screen and (min-width: $breakpoint-desktop) {
     max-width: $breakpoint-desktop;
   }
@@ -47,7 +53,7 @@ a {
 .section-header {
   margin-bottom: 50px;
   color: $color-black;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;

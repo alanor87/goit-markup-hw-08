@@ -29,8 +29,6 @@
   border-radius: 4px;
   background-color: #f5f4fa;
   color: #212121;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -59,7 +57,7 @@
 .portfolio-card-container > li {
   margin: 15px;
   @media screen and (min-width: $breakpoint-tablet) {
-    width: 354px - 15px;
+    width: 354px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     width: 370px;

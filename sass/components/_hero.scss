@@ -2,6 +2,10 @@
   max-width: $breakpoint-mobile;
   margin: 0 auto;
   text-align: center;
+  @media screen and (max-width: 386px) {
+    padding-top: 73px;
+    padding-bottom: 80px;
+  }
   padding-top: 118px;
   padding-bottom: 118px;
   @include sections-paddings-breakpoints(1200px, 200px, 200px);
