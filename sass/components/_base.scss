@@ -19,11 +19,9 @@ img {
 /*-- Wrapper div for the section content --*/
 section, footer {
   width: 100%;
-  min-width: 320px;
   
 }
 .container {
-  min-width: 320px; 
     @media screen and (min-width: $breakpoint-mobile) {
     max-width: $breakpoint-mobile;
   } 
