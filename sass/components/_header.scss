@@ -1,8 +1,13 @@
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
   border-bottom: 1px solid #ececec;
+  z-index: 30;
 }
 .container.header-menu {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
