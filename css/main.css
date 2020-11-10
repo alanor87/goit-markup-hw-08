@@ -1470,6 +1470,12 @@ footer .features-title {
   align-items: center;
 }
 
+@media screen and (max-width: 509px) {
+  .policy-consent > span {
+    display: block;
+  }
+}
+
 .policy-consent > span::before {
   content: "";
   display: inline-block;
